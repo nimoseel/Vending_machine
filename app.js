@@ -6,7 +6,7 @@ const cash = document.querySelector('.cash');
 
 // 입금 버튼 클릭
 putbtn.addEventListener('click', ()=>{
-    if(cashInput.value === ""){
+    if(cashInput.value === "" || cashInput.value < 0){
         alert('금액을 입력해주세요.');
         cash.textContent = parseInt(cash.textContent);
         balance.textContent = parseInt(balance.textContent);
